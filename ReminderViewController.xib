@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReminderViewController">
+            <connections>
+                <outlet property="datePicker" destination="w4f-Tt-pH4" id="wyv-aq-N4l"/>
+                <outlet property="view" destination="x5Q-r8-q6X" id="aq2-TB-x3K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="x5Q-r8-q6X">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="w4f-Tt-pH4">
+                    <rect key="frame" x="0.0" y="107" width="375" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="mpq-E4-p3b"/>
+                        <constraint firstAttribute="height" constant="216" id="wsf-xO-GUY"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="498500070.71277398">
+                        <!--2016-10-18 16:14:30 +0000-->
+                    </date>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiR-lu-cyw">
+                    <rect key="frame" x="67" y="395" width="241" height="147"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="在这个时间提醒我！！"/>
+                    <connections>
+                        <action selector="addReminder:" destination="-1" eventType="touchUpInside" id="fVg-ac-nSM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w4f-Tt-pH4" firstAttribute="top" secondItem="x5Q-r8-q6X" secondAttribute="top" constant="107" id="0MW-DD-TBR"/>
+                <constraint firstItem="DiR-lu-cyw" firstAttribute="top" secondItem="w4f-Tt-pH4" secondAttribute="bottom" constant="72" id="5ZG-ui-bT1"/>
+                <constraint firstAttribute="bottom" secondItem="DiR-lu-cyw" secondAttribute="bottom" constant="125" id="6Jy-QR-UWa"/>
+                <constraint firstAttribute="trailing" secondItem="DiR-lu-cyw" secondAttribute="trailing" constant="67" id="GWO-pu-IY5"/>
+                <constraint firstItem="DiR-lu-cyw" firstAttribute="leading" secondItem="x5Q-r8-q6X" secondAttribute="leading" constant="67" id="TM3-s5-VII"/>
+                <constraint firstItem="w4f-Tt-pH4" firstAttribute="leading" secondItem="x5Q-r8-q6X" secondAttribute="leading" id="b5f-uQ-nkL"/>
+                <constraint firstAttribute="trailing" secondItem="w4f-Tt-pH4" secondAttribute="trailing" id="oKk-c5-kU9"/>
+            </constraints>
+            <point key="canvasLocation" x="3.5" y="-131.5"/>
+        </view>
+    </objects>
+</document>
